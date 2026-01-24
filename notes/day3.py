@@ -1,4 +1,4 @@
-startList = [1,3,7,8,66,2,1,4]
+startList = [1, 3, 7, 8, 66, 2, 1, 4]
 
 floatList = []
 
@@ -23,4 +23,3 @@ for i in range(len(startList)):
         oddList.append("ODD")
 
 print("EVEN: ", len(evenList), " ODD: ", len(oddList))
-
