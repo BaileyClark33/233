@@ -1,9 +1,9 @@
 import pandas as pd
 
-seattle = "https://raw.githubusercontent.com/nixwebb/CSV_Data/refs/heads/master/Seattle2014.csv"
 
-data = pd.read_csv(seattle)
+def createDF(cols, inds):
+    data = {c: [str(c) + str(i) for i in inds] for c in cols}
+    return pd.DataFrame(data, inds)
 
-print("Greatest rainfall:", data["PRCP"].max())
-print("Average rainfall:", data["PRCP"].mean())
-print("Smallest rainfall:", data["PRCP"].min())
+
+df2 = createDF(["AB"], [3, 4])
